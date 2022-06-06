@@ -1,0 +1,45 @@
+.wrapper {
+  height: 91;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .buttons {
+    display: flex;
+    align-items: center;
+
+    & > * {
+      &:not(&:first-child) {
+        margin-left: 21px;
+      }
+    }
+  }
+
+  .circles {
+    display: flex;
+    align-items: center;
+
+    &Item {
+      cursor: pointer;
+      width: 21.23px;
+      height: 21.23px;
+      border-radius: 50%;
+
+      &:not(:first-child) {
+        margin-left: 20px;
+      }
+
+      &Active {
+        border: 2px solid #ffffff;
+      }
+    }
+  }
+}
