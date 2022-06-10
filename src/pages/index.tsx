@@ -1,5 +1,5 @@
 import type { NextPage } from 'next';
-import { LandingPageUi } from '../Components';
+import { LandingPageUi } from '../components';
 
 const LandingPage: NextPage = () => {
   return <LandingPageUi />;

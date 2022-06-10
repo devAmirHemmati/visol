@@ -1,0 +1,10 @@
+.dark {
+  .swiper-button-prev,
+  .swiper-button-next {
+    border-color: #ffffff;
+
+    &::after {
+      border-color: #ffffff;
+    }
+  }
+}

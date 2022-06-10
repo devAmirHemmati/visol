@@ -1,0 +1,10 @@
+.white-blue {
+  .swiper-button-prev,
+  .swiper-button-next {
+    border-color: #007991;
+
+    &::after {
+      color: #007991;
+    }
+  }
+}

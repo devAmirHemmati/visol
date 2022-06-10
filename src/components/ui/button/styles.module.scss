@@ -1,0 +1,25 @@
+.wrapper {
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.color {
+  &-outline-white {
+    background-color: transparent;
+    border: 1px solid var(--color-white);
+    color: var(--color-white);
+  }
+}
+
+.size {
+  &-medium {
+    padding: 10px 30px;
+    height: 42px;
+    border-radius: 80px;
+    font-size: 17px;
+  }
+}

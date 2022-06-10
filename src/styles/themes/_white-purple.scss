@@ -1,0 +1,10 @@
+.white-purple {
+  .swiper-button-prev,
+  .swiper-button-next {
+    border-color: #262261;
+
+    &::after {
+      color: #262261;
+    }
+  }
+}
