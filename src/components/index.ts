@@ -1,3 +1,3 @@
 export { default as LandingPageUi } from './landing';
 
-export { Image, Button, Slider } from './ui';
+export { Image, Button, Slider, Typography } from './ui';

@@ -1,0 +1,143 @@
+.wrapper {
+  .description {
+    text-align: center;
+
+    p {
+      position: relative;
+      display: inline-block;
+      margin: 0 auto !important;
+
+      span {
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 324px;
+        height: 3px;
+        border-radius: 20px;
+
+        &:first-child {
+          left: -285px;
+        }
+
+        &:last-child {
+          right: -285px;
+        }
+      }
+    }
+  }
+
+  .box {
+    display: grid;
+    grid-template-columns: 386px 1fr;
+    column-gap: 100px;
+    margin-top: 51px;
+
+    $animation-time: 0.6s;
+    $icon-dimension: 72px;
+
+    .menu {
+      position: relative;
+      list-style: none;
+      margin-top: -32px;
+
+      &Circle {
+        width: $icon-dimension;
+        height: $icon-dimension;
+        transition: $animation-time;
+        border-radius: 50%;
+        position: absolute;
+      }
+
+      &Item {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+        margin-top: 32px;
+
+        * {
+          cursor: pointer;
+        }
+
+        &Title {
+          &Active {
+            text-decoration: underline;
+          }
+        }
+
+        &Icon {
+          margin-right: 6px;
+          width: $icon-dimension;
+          height: $icon-dimension;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: $animation-time;
+          position: relative;
+          z-index: 2;
+
+          & > * {
+            transition: $animation-time;
+          }
+
+          &Active {
+            & > * {
+              transform: scale(1.3);
+            }
+          }
+        }
+
+        &Border {
+          position: absolute;
+          right: 1.65px;
+          top: 0;
+          width: 2px;
+          height: 100%;
+          transition: $animation-time;
+          border-radius: 20px;
+
+          &Active {
+            right: 0;
+            width: 5px;
+          }
+        }
+      }
+    }
+
+    .main {
+      position: relative;
+      overflow: hidden;
+
+      & > * {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        transition: $animation-time;
+        position: absolute;
+      }
+
+      .image {
+        position: relative;
+        width: 365px;
+        height: 552px;
+        margin-right: 116px;
+      }
+
+      .content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        * {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

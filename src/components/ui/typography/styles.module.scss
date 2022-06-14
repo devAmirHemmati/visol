@@ -1,0 +1,109 @@
+@mixin typography(
+  $font-style,
+  $font-variant,
+  $font-weight,
+  $font-size,
+  $line-height,
+  $letter-spacing
+) {
+  font-style: $font-style;
+  font-variant: $font-variant;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+}
+
+.typography {
+  margin: 0;
+
+  &-with-icon {
+    display: flex;
+    align-items: center;
+
+    span {
+      padding-left: 8px;
+    }
+  }
+
+  &-variant {
+    &-title-1 {
+      @include typography(normal, normal, bold, 71px, 83px, 0px);
+    }
+
+    &-title-2 {
+      @include typography(italic, normal, normal, 64px, 97px, 0px);
+    }
+
+    &-title-3 {
+      @include typography(italic, normal, normal, 35px, 73px, 0px);
+    }
+
+    &-text-1 {
+      @include typography(normal, normal, normal, 32px, 41px, 0px);
+    }
+
+    &-text-2 {
+      @include typography(normal, normal, normal, 27px, 35px, 0px);
+    }
+
+    &-text-3 {
+      @include typography(normal, normal, normal, 24px, 35px, 0px);
+    }
+
+    &-text-4 {
+      @include typography(normal, normal, normal, 25px, 53px, 0px);
+    }
+
+    &-tiny {
+      @include typography(normal, normal, normal, 22px, 30px, 0px);
+    }
+  }
+
+  &-text-decoration {
+    &-underline {
+      text-decoration: underline;
+    }
+
+    &-none {
+      text-decoration: none;
+    }
+  }
+
+  &-align {
+    &-right {
+      text-align: right;
+    }
+
+    &-center {
+      text-align: center;
+    }
+
+    &-left {
+      text-align: left;
+    }
+  }
+
+  &-direction {
+    &-rtl {
+      direction: rtl;
+    }
+
+    &-ltr {
+      direction: ltr;
+      display: none;
+    }
+  }
+
+  &-none-selection {
+    cursor: default;
+
+    &::selection {
+      background-color: transparent;
+    }
+  }
+
+  &-cursor-pointer {
+    cursor: pointer;
+  }
+}
