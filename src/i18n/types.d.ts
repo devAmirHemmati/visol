@@ -13,4 +13,9 @@ export interface ILocale {
     description: string;
     imageName: string;
   }[];
+  landingStatisticsTitle: string;
+  landingStatisticsItems: {
+    title: string;
+    value: string;
+  }[];
 }

@@ -60,6 +60,25 @@ const faLocale: ILocale = {
       imageName: 'menu-2.png',
     },
   ],
+  landingStatisticsTitle: 'Statistics',
+  landingStatisticsItems: [
+    {
+      title: 'Active Installation',
+      value: '2M',
+    },
+    {
+      title: 'Active User',
+      value: '1.5M',
+    },
+    {
+      title: 'Graduates',
+      value: '2M',
+    },
+    {
+      title: 'See Visol',
+      value: '3M',
+    },
+  ],
 };
 
 export default faLocale;

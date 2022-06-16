@@ -12,6 +12,7 @@ const whiteBlueTheme: ITheme = {
   menuLine: '#78B8C5',
   menuLineActive: '#78B8C5',
   activeIconColor: '#007991',
+  white: '#ffffff',
 };
 
 export default whiteBlueTheme;

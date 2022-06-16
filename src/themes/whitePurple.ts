@@ -12,6 +12,7 @@ const whitePurpleTheme: ITheme = {
   menuLineActive: '#5e6594',
   activeIcon: '#DBDEF1',
   activeIconColor: '#604581',
+  white: '#ffffff',
 };
 
 export default whitePurpleTheme;

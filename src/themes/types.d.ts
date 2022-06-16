@@ -8,6 +8,7 @@ export enum ETheme {
   MENU_LINE_ACTIVE = 'menuLineActive',
   ACTIVE_ICON = 'activeIcon',
   ACTIVE_ICON_COLOR = 'activeIconColor',
+  WHITE = 'white',
 }
 
 export default interface ITheme {
@@ -20,4 +21,5 @@ export default interface ITheme {
   [ETheme.MENU_LINE_ACTIVE]: string;
   [ETheme.ACTIVE_ICON]: string;
   [ETheme.ACTIVE_ICON_COLOR]: string;
+  [ETheme.WHITE]: string;
 }

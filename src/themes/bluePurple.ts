@@ -13,6 +13,7 @@ const bluePurpleTheme: ITheme = {
   menuLine: '#fefefe',
   menuLineActive: '#c09eba',
   activeIconColor: '#485186',
+  white: '#ffffff',
 };
 
 export default bluePurpleTheme;

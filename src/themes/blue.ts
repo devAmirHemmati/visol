@@ -13,6 +13,7 @@ const blueTheme: ITheme = {
   menuLine: '#22869b',
   menuLineActive: '#eef6f7',
   activeIconColor: '#515A8D',
+  white: '#ffffff',
 };
 
 export default blueTheme;

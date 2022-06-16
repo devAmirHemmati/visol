@@ -9,6 +9,7 @@ const staticImagesURL = {
   portuguese: '/images/countries/portuguese.png',
   russian: '/images/countries/russian.png',
   spain: '/images/countries/spain.png',
+  statisticsBackground: '/images/statistics-background.png',
 };
 
 export default staticImagesURL;
