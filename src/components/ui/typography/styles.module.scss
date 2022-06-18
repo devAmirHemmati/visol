@@ -51,6 +51,10 @@
       @include typography(normal, normal, normal, 31px, 47px, 0px);
     }
 
+    &-title-7 {
+      @include typography(italic, normal, normal, 45px, 86px, 0px);
+    }
+
     &-text-1 {
       @include typography(normal, normal, normal, 32px, 41px, 0px);
     }
@@ -89,6 +93,10 @@
 
     &-text-10 {
       @include typography(normal, normal, normal, 26px, 40px, 0px);
+    }
+
+    &-text-11 {
+      @include typography(normal, normal, normal, 24px, 53px, 0px);
     }
 
     &-tiny {

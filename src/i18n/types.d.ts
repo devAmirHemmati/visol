@@ -37,6 +37,16 @@ export interface ILocale {
     title: string;
     description: string;
   }[];
+  landingLetterNewsTitle: string;
+  landingLetterNewsItems: {
+    imageURL: string;
+    description: string;
+  }[];
+  landingLearningStepsTitle: string;
+  landingLearningStepsItems: {
+    title: string;
+    description: string;
+  }[];
   footerItems: {
     title: string;
     to: string;

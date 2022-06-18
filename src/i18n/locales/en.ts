@@ -191,6 +191,50 @@ Technology at the Service of Human Learning`,
         'On this application there are some facilities for people with diverse learning types. Applying these',
     },
   ],
+  landingLetterNewsTitle: 'Letter News',
+  landingLetterNewsItems: [
+    {
+      imageURL:
+        'https://files.virgool.io/upload/users/74138/posts/ktet1yrpyayh/mwfchahgve8p.jpeg?x-img=v1/resize,w_250/optimize,q_100',
+      description:
+        'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur facilis voluptatum sit beatae recusandae! Fugit laudantium quis numquam, ducimus ullam corporis possimus nam provident velit sint, consectetur, earum facere ab!',
+    },
+    {
+      imageURL:
+        'https://files.virgool.io/upload/users/74138/posts/ktet1yrpyayh/mwfchahgve8p.jpeg?x-img=v1/resize,w_250/optimize,q_100',
+      description:
+        'On this application there are some facilities for people with diverse learning types. Applying these special features can help you improve your learning rate to a great extent. Pressing the button down there (recommendations), instructions on how to use these facilities will be properly shown. And by implying these instructions you can take advantage of the VISOL intelligent facilities to gain success in the field of education.',
+    },
+    {
+      imageURL:
+        'https://files.virgool.io/upload/users/74138/posts/ktet1yrpyayh/mwfchahgve8p.jpeg?x-img=v1/resize,w_250/optimize,q_100',
+      description:
+        'On this application there are some facilities for people with diverse learning types. Applying these special features can help you improve your learning rate to a great extent. Pressing the button down there (recommendations), instructions on how to use these facilities will be properly shown. And by implying these instructions you can take advantage of the VISOL intelligent facilities to gain success in the field of education.',
+    },
+  ],
+  landingLearningStepsTitle: 'How does it work',
+  landingLearningStepsItems: [
+    {
+      title: "Today's Study",
+      description:
+        'On this application there are some facilities for people with diverse',
+    },
+    {
+      title: 'Level & Unit',
+      description:
+        'On this application there are some facilities for people with diverse',
+    },
+    {
+      title: 'Exercise',
+      description:
+        'On this application there are some facilities for people with diverse',
+    },
+    {
+      title: 'Exercise',
+      description:
+        'On this application there are some facilities for people with diverse',
+    },
+  ],
   footerItems: [
     [
       {

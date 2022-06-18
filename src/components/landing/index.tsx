@@ -4,6 +4,8 @@ import { IComponent } from '../../types';
 import CommentsLandingPageUi from './comments';
 import GreatServiceLandingPageUi from './greatService';
 import IntroductionLandingPageUi from './introduction';
+import LearningStepsLandingPageUi from './learningSteps';
+import LetterNewsLandingPageUi from './letterNews';
 import ServicesLandingPageUi from './services';
 import StatisticsLandingPageUi from './statistics';
 import VideoLandingPageUi from './video';
@@ -24,6 +26,10 @@ const LandingPageUi: FC<IComponent<HTMLElement>> = () => {
       <CommentsLandingPageUi />
 
       <ServicesLandingPageUi />
+
+      <LetterNewsLandingPageUi />
+
+      <LearningStepsLandingPageUi />
     </main>
   );
 };

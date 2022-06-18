@@ -9,6 +9,7 @@ type tTypographyVariant =
   | 'title-4'
   | 'title-5'
   | 'title-6'
+  | 'title-7'
   | 'text-1'
   | 'text-2'
   | 'text-3'
@@ -19,6 +20,7 @@ type tTypographyVariant =
   | 'text-8'
   | 'text-9'
   | 'text-10'
+  | 'text-11'
   | 'tiny';
 
 type tTypographyDirection = 'rtl' | 'ltr';

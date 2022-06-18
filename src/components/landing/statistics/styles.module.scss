@@ -4,6 +4,7 @@
   padding-bottom: 32px;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 
   .title {
     position: relative;
@@ -62,7 +63,7 @@
 
         & > p {
           position: relative;
-          bottom: 30px;
+          bottom: 15px;
         }
       }
     }
