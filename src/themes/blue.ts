@@ -14,6 +14,10 @@ const blueTheme: ITheme = {
   menuLineActive: '#eef6f7',
   activeIconColor: '#515A8D',
   white: '#ffffff',
+  videoTitle: '#ffffff',
+  commentTitle: '#EA95B4',
+  commentFullName: '#F3C240',
+  footer: '#F2EFF5',
 };
 
 export default blueTheme;

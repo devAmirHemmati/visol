@@ -13,6 +13,10 @@ const whiteBlueTheme: ITheme = {
   menuLineActive: '#78B8C5',
   activeIconColor: '#007991',
   white: '#ffffff',
+  videoTitle: '#007991',
+  commentTitle: '#EA95B4',
+  commentFullName: '#F3C240',
+  footer: '#F2EFF5',
 };
 
 export default whiteBlueTheme;

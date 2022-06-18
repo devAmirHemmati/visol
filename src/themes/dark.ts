@@ -13,6 +13,10 @@ const bluePurpleTheme: ITheme = {
   menuLineActive: '#787a85',
   activeIconColor: '#596193',
   white: '#ffffff',
+  videoTitle: '#ffffff',
+  commentTitle: '#EA95B4',
+  commentFullName: '#F3C240',
+  footer: '#F2EFF5',
 };
 
 export default bluePurpleTheme;

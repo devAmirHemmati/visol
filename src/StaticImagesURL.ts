@@ -10,6 +10,8 @@ const staticImagesURL = {
   russian: '/images/countries/russian.png',
   spain: '/images/countries/spain.png',
   statisticsBackground: '/images/statistics-background.png',
+  videoBot: '/images/video-bot.png',
+  commentBackground: '/images/comment-background.png',
 };
 
 export default staticImagesURL;

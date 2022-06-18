@@ -1,0 +1,66 @@
+.wrapper {
+  padding-top: 260px;
+  padding-bottom: 80px;
+
+  .video {
+    width: 1017px;
+    height: 560px;
+    max-width: 90%;
+
+    margin: 0 auto;
+    position: relative;
+
+    .content {
+      position: absolute;
+      bottom: calc(100% - 29px);
+      left: 40px;
+      display: flex;
+      align-items: flex-end;
+      z-index: 2;
+
+      img {
+        top: 126px !important;
+      }
+
+      p {
+        max-width: 532px;
+        position: relative;
+        bottom: 50px;
+      }
+    }
+
+    .stars {
+      position: absolute;
+      display: grid;
+      grid-template-columns: repeat(13, 1fr);
+      column-gap: 8px;
+      row-gap: 7px;
+
+      $dimension: -143px;
+
+      &Start {
+        left: $dimension;
+        top: 60px;
+      }
+
+      &End {
+        right: $dimension;
+        bottom: -42px;
+      }
+    }
+
+    &Container {
+      position: relative;
+      border: 25px solid var(--color-white);
+      border-radius: 16px;
+      width: 100%;
+      height: 100%;
+      z-index: 3;
+
+      & > iframe {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

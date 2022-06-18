@@ -13,6 +13,10 @@ const whitePurpleTheme: ITheme = {
   activeIcon: '#DBDEF1',
   activeIconColor: '#604581',
   white: '#ffffff',
+  videoTitle: '#604581',
+  commentTitle: '#EA95B4',
+  commentFullName: '#F3C240',
+  footer: '#F2EFF5',
 };
 
 export default whitePurpleTheme;

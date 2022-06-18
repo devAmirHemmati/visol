@@ -1,0 +1,19 @@
+.wrapper {
+  padding-top: 47px;
+
+  .service {
+    display: grid;
+    grid-template-columns: repeat(3, 410px);
+    row-gap: 70px;
+    justify-content: space-between;
+    margin-top: 45px;
+
+    &Item {
+      .icon {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 21px;
+      }
+    }
+  }
+}

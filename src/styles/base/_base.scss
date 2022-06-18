@@ -39,3 +39,20 @@ body {
     font-weight: bold;
   }
 }
+
+.landing-comments-section {
+  .swiper-slide {
+    & > * {
+      padding: 0 calc(79px / 2) !important;
+    }
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    border: none;
+
+    &::after {
+      font-size: 40px !important;
+      font-weight: bold;
+    }
+  }
+}

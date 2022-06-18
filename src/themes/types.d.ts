@@ -9,6 +9,10 @@ export enum ETheme {
   ACTIVE_ICON = 'activeIcon',
   ACTIVE_ICON_COLOR = 'activeIconColor',
   WHITE = 'white',
+  VIDEO_TITLE = 'videoTitle',
+  COMMENT_TITLE = 'commentTitle',
+  COMMENT_FULL_NAME = 'commentFullName',
+  FOOTER = 'footer',
 }
 
 export default interface ITheme {
@@ -22,4 +26,8 @@ export default interface ITheme {
   [ETheme.ACTIVE_ICON]: string;
   [ETheme.ACTIVE_ICON_COLOR]: string;
   [ETheme.WHITE]: string;
+  [ETheme.VIDEO_TITLE]: string;
+  [ETheme.COMMENT_TITLE]: string;
+  [ETheme.COMMENT_FULL_NAME]: string;
+  [ETheme.FOOTER]: string;
 }
