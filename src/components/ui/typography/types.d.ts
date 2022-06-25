@@ -21,6 +21,7 @@ type tTypographyVariant =
   | 'text-9'
   | 'text-10'
   | 'text-11'
+  | 'text-12'
   | 'tiny';
 
 type tTypographyDirection = 'rtl' | 'ltr';

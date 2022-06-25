@@ -99,6 +99,10 @@
       @include typography(normal, normal, normal, 24px, 53px, 0px);
     }
 
+    &-text-12 {
+      @include typography(normal, normal, normal, 17px, 30px, 0px);
+    }
+
     &-tiny {
       @include typography(normal, normal, normal, 22px, 30px, 0px);
     }

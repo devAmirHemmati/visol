@@ -6,6 +6,7 @@ export interface ILocale {
   landingIntroductionTitle: string;
   landingIntroductionDescriptionHTML: string;
   landingIntroductionCountryTitle: string;
+  landingIntroductionSliderItems: string[];
   landingGreatServiceTitle: string;
   landingGreatServiceDescription: string;
   landingGreatServiceItems: {

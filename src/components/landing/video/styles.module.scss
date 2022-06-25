@@ -1,6 +1,13 @@
+@import './../../../styles/abstract/media';
+
 .wrapper {
   padding-top: 260px;
   padding-bottom: 80px;
+
+  @include media('max', 'sm') {
+    padding-top: 100px;
+    padding-bottom: 150px;
+  }
 
   .video {
     width: 1017px;
@@ -18,8 +25,16 @@
       align-items: flex-end;
       z-index: 2;
 
+      @include media('max', 'sm') {
+        position: initial;
+      }
+
       img {
         top: 126px !important;
+
+        @include media('max', 'sm') {
+          display: none !important;
+        }
       }
 
       p {

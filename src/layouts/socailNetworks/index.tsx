@@ -10,34 +10,36 @@ const SocialNetworksLayout = () => {
 
   return (
     <div className={classes.wrapper}>
-      <ContainerLayout className={classes.container}>
-        <a
-          href={activeLocaleWords.socialNetworks.instagramURL}
-          target="_blank"
-          style={{ backgroundColor: '#8f8ebb' }}>
-          <AiOutlineInstagram color="#ffffff" size={25} />
-        </a>
+      <ContainerLayout>
+        <div className={classes.container}>
+          <a
+            href={activeLocaleWords.socialNetworks.instagramURL}
+            target="_blank"
+            style={{ backgroundColor: '#8f8ebb' }}>
+            <AiOutlineInstagram color="#ffffff" size={25} />
+          </a>
 
-        <a
-          href={activeLocaleWords.socialNetworks.youtubeURL}
-          target="_blank"
-          style={{ backgroundColor: '#8f8ebb' }}>
-          <AiFillYoutube color="#ffffff" size={25} />
-        </a>
+          <a
+            href={activeLocaleWords.socialNetworks.youtubeURL}
+            target="_blank"
+            style={{ backgroundColor: '#8f8ebb' }}>
+            <AiFillYoutube color="#ffffff" size={25} />
+          </a>
 
-        <a
-          href={activeLocaleWords.socialNetworks.linkedinURL}
-          target="_blank"
-          style={{ backgroundColor: '#8f8ebb' }}>
-          <RiLinkedinFill color="#ffffff" size={25} />
-        </a>
+          <a
+            href={activeLocaleWords.socialNetworks.linkedinURL}
+            target="_blank"
+            style={{ backgroundColor: '#8f8ebb' }}>
+            <RiLinkedinFill color="#ffffff" size={25} />
+          </a>
 
-        <a
-          href={activeLocaleWords.socialNetworks.telegramURL}
-          target="_blank"
-          style={{ backgroundColor: '#8f8ebb' }}>
-          <TbBrandTelegram color="#ffffff" size={25} />
-        </a>
+          <a
+            href={activeLocaleWords.socialNetworks.telegramURL}
+            target="_blank"
+            style={{ backgroundColor: '#8f8ebb' }}>
+            <TbBrandTelegram color="#ffffff" size={25} />
+          </a>
+        </div>
       </ContainerLayout>
     </div>
   );

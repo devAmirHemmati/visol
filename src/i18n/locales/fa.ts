@@ -15,6 +15,7 @@ const faLocale: ILocale = {
   landingIntroductionDescriptionHTML:
     'Intelligent Educational System Technology at the Service of Human Learning',
   landingIntroductionCountryTitle: 'Learning English',
+  landingIntroductionSliderItems: ['/images/intro.png', '/images/intro-2.png'],
   landingGreatServiceTitle: 'Our Great Services',
   landingGreatServiceDescription:
     'Intelligent Educational System Technology at the Service of Human Learning',

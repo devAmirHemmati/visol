@@ -1,7 +1,26 @@
 .wrapper {
+  position: relative;
+
   .slider {
-    padding: 0 62px;
-    padding-left: calc(90px + 62px);
+    width: 100%;
     height: calc(100vh - var(--header-height));
+    position: relative;
+  }
+
+  .countriesWrapper {
+    position: absolute;
+    width: 100%;
+    height: 95px;
+    left: 0;
+    bottom: calc(32px + 17px);
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .countries {
+      width: calc(100% - 150px);
+    }
   }
 }

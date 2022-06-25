@@ -1,5 +1,6 @@
 import { BiBookReader } from 'react-icons/bi';
 import { useI18Context, useThemeContext } from '../../../gsm';
+import { ContainerLayout } from '../../../layouts';
 import staticImagesURL from '../../../StaticImagesURL';
 import { ETheme } from '../../../themes/types.d';
 import { Typography } from '../../ui';
@@ -28,29 +29,31 @@ const StatisticsLandingPageUi = () => {
         <span style={{ background: activeTheme.gradientLineReverse }} />
       </Typography>
 
-      <ul className={classes.list}>
-        {activeLocaleWords.landingStatisticsItems.map((item, index) => (
-          <li className={classes.listItem} key={index}>
-            <div className={classes.listItemHeader}>
-              <BiBookReader size={40} color={activeTheme[ETheme.WHITE]} />
+      <ContainerLayout>
+        <ul className={classes.list}>
+          {activeLocaleWords.landingStatisticsItems.map((item, index) => (
+            <li className={classes.listItem} key={index}>
+              <div className={classes.listItemHeader}>
+                <BiBookReader size={40} color={activeTheme[ETheme.WHITE]} />
 
-              <Typography variant="text-3" component="p" color={ETheme.WHITE}>
-                {item.title}
-              </Typography>
-            </div>
+                <Typography variant="text-3" component="p" color={ETheme.WHITE}>
+                  {item.title}
+                </Typography>
+              </div>
 
-            <div className={classes.listItemCircular}>
-              <Typography
-                color={ETheme.WHITE}
-                variant="text-5"
-                component="p"
-                textAlgin="center">
-                {item.value}+
-              </Typography>
-            </div>
-          </li>
-        ))}
-      </ul>
+              <div className={classes.listItemCircular}>
+                <Typography
+                  color={ETheme.WHITE}
+                  variant="text-5"
+                  component="p"
+                  textAlgin="center">
+                  {item.value}+
+                </Typography>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </ContainerLayout>
     </div>
   );
 };

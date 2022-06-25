@@ -1,3 +1,5 @@
+@import './../../../styles/abstract/media';
+
 .wrapper {
   padding-top: 50px;
   padding-bottom: 120px;
@@ -5,24 +7,51 @@
   background-size: cover;
   background-attachment: fixed;
 
+  @include media('max', 'md') {
+    padding-bottom: 50px;
+  }
+
   .title {
     margin-bottom: 130px;
+
+    @include media('max', 'md') {
+      margin-bottom: 50px;
+    }
   }
 
   .comments {
-    width: calc(702px * 2 + 79px / 2);
+    width: calc(100% - 65px * 2);
+
+    @include media('max', 'md') {
+      width: 100%;
+    }
 
     &Item {
       &Header {
-        width: calc(100% - 164px - 68px - 24px);
         display: flex;
         flex-direction: column;
         align-items: flex-end;
         margin-left: auto;
 
+        @media (max-width: 1600px) {
+          width: 100%;
+          margin-bottom: 70px;
+        }
+
+        @include media('max', 'md') {
+          margin-bottom: 60px;
+        }
+
         &Title {
           color: var(--color-pink);
           margin-bottom: 16px;
+        }
+
+        .borderBottom {
+          border-bottom-width: 1px;
+          border-bottom-style: solid;
+          width: calc(100% - 164px - 68px - 24px);
+          margin-bottom: 10px;
         }
 
         .storeInformation {
@@ -30,9 +59,7 @@
           align-items: center;
           justify-content: flex-end;
           padding-bottom: 25px;
-          margin-bottom: 10px;
-          border-bottom-width: 1px;
-          border-bottom-style: solid;
+
           width: 100%;
 
           & > * {
@@ -66,8 +93,14 @@
         border-radius: 30px;
         padding: 0 75px;
         position: relative;
-        height: 370px;
+        min-height: 370px;
         padding-top: 100px;
+        padding-bottom: 20px;
+
+        @include media('max', 'md') {
+          padding-left: 60px;
+          padding-right: 60px;
+        }
 
         img {
           width: 164px;
@@ -76,6 +109,12 @@
           position: absolute;
           left: 75px;
           top: calc(-164px / 2);
+
+          @include media('max', 'md') {
+            width: 120px;
+            height: 120px;
+            top: calc(-120px / 2);
+          }
         }
 
         .description {
@@ -88,6 +127,13 @@
           display: flex;
           align-items: center;
           justify-content: space-between;
+          flex-wrap: wrap;
+
+          @include media('max', 'lg') {
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: start;
+          }
         }
       }
     }

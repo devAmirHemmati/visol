@@ -1,10 +1,16 @@
+@import './../../styles/abstract/media';
+
 .wrapper {
   .container {
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
-    min-height: 76px;
+    flex-wrap: wrap;
     margin-right: -57px;
+
+    @include media('max', 'md') {
+      justify-content: center;
+    }
 
     & > * {
       margin-right: 57px;
@@ -14,6 +20,8 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      margin-top: 13px;
+      margin-bottom: 13px;
     }
   }
 }

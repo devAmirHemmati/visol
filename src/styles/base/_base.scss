@@ -4,6 +4,34 @@
   box-sizing: border-box;
 }
 
+*::-webkit-scrollbar {
+  background-color: #3d4158;
+  max-width: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #edeffa;
+  transition: 0.4s;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: #e1e3f7;
+  }
+
+  &:active {
+    background-color: #bfc1d8;
+    border-radius: 12px;
+  }
+}
+
+html {
+  font-family: 'Segoe UI Regular';
+}
+
+body *::-webkit-scrollbar {
+  border-radius: 12px;
+}
+
 html,
 body {
   overflow-x: hidden;
@@ -55,4 +83,10 @@ body {
       font-weight: bold;
     }
   }
+}
+
+.styles_sliderItem___pn8A {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

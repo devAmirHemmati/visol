@@ -103,6 +103,7 @@ const GreatServiceLandingPageUi = () => {
                   variant="text-3"
                   color={ETheme.TEXT}
                   className={isActive ? classes.menuItemTitleActive : ''}
+                  textAlgin="center"
                   noneSelection>
                   {title}
                 </Typography>
@@ -121,14 +122,13 @@ const GreatServiceLandingPageUi = () => {
             );
           })}
         </ul>
-
         <div className={classes.main}>
           {items.map((item, index) => {
             const top: string =
               index > activeMenuIndex
-                ? '100%'
+                ? '150%'
                 : index < activeMenuIndex
-                ? '-100%'
+                ? '-150%'
                 : '0';
 
             return (

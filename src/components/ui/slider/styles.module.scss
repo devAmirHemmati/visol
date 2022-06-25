@@ -1,9 +1,37 @@
 .wrapper {
-  direction: ltr;
   position: relative;
   height: 100%;
+  display: flex;
+  align-items: center;
 
-  .sliderItem {
+  .arrows {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    cursor: pointer;
+
+    &WithBorder {
+      border: 1px solid white;
+      border-radius: 50%;
+    }
+
+    &Left {
+      left: 50px;
+    }
+
+    &Right {
+      right: 50px;
+    }
+  }
+
+  .swiper {
+    direction: ltr;
+    position: relative;
     height: 100%;
+
+    .sliderItem {
+      height: 100%;
+    }
   }
 }

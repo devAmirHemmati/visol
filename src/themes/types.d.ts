@@ -13,6 +13,7 @@ export enum ETheme {
   COMMENT_TITLE = 'commentTitle',
   COMMENT_FULL_NAME = 'commentFullName',
   FOOTER = 'footer',
+  SLIDER_ARROWS = 'sliderArrows',
 }
 
 export default interface ITheme {
@@ -30,4 +31,5 @@ export default interface ITheme {
   [ETheme.COMMENT_TITLE]: string;
   [ETheme.COMMENT_FULL_NAME]: string;
   [ETheme.FOOTER]: string;
+  [ETheme.SLIDER_ARROWS]: string;
 }

@@ -1,18 +1,46 @@
+@import './../../../styles/abstract/media';
+
 .wrapper {
   padding-top: 47px;
 
   .service {
-    display: grid;
-    grid-template-columns: repeat(3, 410px);
-    row-gap: 70px;
+    // display: grid;
+    // grid-template-columns: repeat(3, 410px);
+    // row-gap: 70px;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 45px;
+    margin-top: 25px;
+    margin-left: -70px;
 
     &Item {
+      margin-top: 70px;
+      margin-left: 70px;
+      width: calc(33% - 70px);
+
+      @include media('max', 'md') {
+        width: calc(50% - 70px);
+      }
+
+      @include media('max', 'sm') {
+        width: calc(100% - 70px);
+      }
+
       .icon {
         display: flex;
         justify-content: center;
         margin-bottom: 21px;
+        transition: 0.4s;
+      }
+
+      &:hover {
+        * {
+          font-style: italic;
+        }
+
+        svg {
+          color: #464f85 !important;
+        }
       }
     }
   }

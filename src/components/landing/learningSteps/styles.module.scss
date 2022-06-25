@@ -1,3 +1,5 @@
+@import './../../../styles/abstract/media';
+
 .wrapper {
   padding-top: 100px;
   padding-bottom: 65px;
@@ -12,6 +14,10 @@
       height: 134px;
       display: flex;
       align-items: center;
+
+      @include media('max', 'lg') {
+        display: none;
+      }
 
       .line {
         width: 100%;
@@ -49,8 +55,38 @@
       justify-content: space-between;
       align-items: center;
 
+      @include media('max', 'lg') {
+        flex-wrap: wrap;
+        margin-left: -70px;
+        margin-top: -70px;
+      }
+
+      @include media('max', 'md') {
+        margin-left: -50px;
+      }
+
+      @include media('max', 'sm') {
+        margin-left: 0;
+      }
+
       &Item {
         width: 341px;
+
+        @include media('max', 'lg') {
+          width: calc(50% - 70px);
+          margin-left: 70px;
+          margin-top: 70px;
+        }
+
+        @include media('max', 'md') {
+          width: calc(50% - 50px);
+          margin-left: 50px;
+        }
+
+        @include media('max', 'sm') {
+          width: 100%;
+          margin-left: 0;
+        }
 
         &Header {
           display: flex;

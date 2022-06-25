@@ -6,4 +6,8 @@ export interface ISliderProps extends SwiperOptions {
   ref?: any;
   slideProps?: IComponent<HTMLElement>;
   className?: string;
+  isShowArrows?: boolean;
+  isShowArrowsBorder?: boolean;
+  wrapperClassName?: string;
+  arrowsColor?: string;
 }

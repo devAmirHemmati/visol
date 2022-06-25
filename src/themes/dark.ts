@@ -17,6 +17,7 @@ const bluePurpleTheme: ITheme = {
   commentTitle: '#EA95B4',
   commentFullName: '#F3C240',
   footer: '#F2EFF5',
+  sliderArrows: '#fff',
 };
 
 export default bluePurpleTheme;

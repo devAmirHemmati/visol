@@ -15,6 +15,7 @@ const enLocale: ILocale = {
   landingIntroductionDescriptionHTML: `Intelligent Educational System
 Technology at the Service of Human Learning`,
   landingIntroductionCountryTitle: 'Learning English',
+  landingIntroductionSliderItems: ['/images/intro.png', '/images/intro-2.png'],
   landingGreatServiceTitle: 'Our Great Services',
   landingGreatServiceDescription:
     'Intelligent Educational System Technology at the Service of Human Learning',
@@ -22,7 +23,7 @@ Technology at the Service of Human Learning`,
     {
       title: 'Sign up',
       description:
-        'On this application there are some facilities for people with diverse learning types. Applying these special features can help you improve your learning rate to a great extent. Pressing the button down there (recommendations), instructions on how to use these facilities will be properly shown. And by implying these instructions you can take advantage of the VISOL intelligent facilities to gain success in the field of education.',
+        'On this application there are some facilities for people with diverse learning types. Applying these special features can help you improve your learning rate to a great extent. Pressing the button down there (recommendations), instructions on how to use these facilities will be properly shown. And by implying these instructions you can take advantage of the VISOL intelligent facilities to gain success in the field of education. On this application there are some facilities for people with diverse learning types. Applying these special features can help you improve your learning rate to a great extent. Pressing the button down there (recommendations), instructions on how to use these facilities will be properly shown. And by implying these instructions you can take advantage of the VISOL intelligent facilities to gain success in the field of education.',
       imageName: 'menu-2.png',
     },
     {
