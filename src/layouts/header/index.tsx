@@ -1,17 +1,21 @@
-import { FC } from 'react';
+import { FC, useState } from 'react';
+import { HiMenuAlt1 } from 'react-icons/hi';
 import { AiFillAndroid, AiFillApple } from 'react-icons/ai';
-import { Image, Button } from '../../components';
+import { Image, Button, Typography } from '../../components';
 import { useI18Context, useThemeContext } from '../../gsm';
 import { tThemesType } from '../../gsm/theme/types';
 import staticImagesURL from '../../StaticImagesURL';
 import ContainerLayout from '../container';
 import { IHeaderLayoutProps } from './types';
 import classes from './styles.module.scss';
+import { ETheme } from '../../themes/types.d';
+import { Collapse } from 'react-collapse';
 
 const HeaderLayout: FC<IHeaderLayoutProps> = () => {
   const { activeTheme, activeThemeType, handleChangeThemeType } =
     useThemeContext();
   const { activeLocaleWords } = useI18Context();
+  const [isActiveMenu, setIsActiveMenu] = useState<boolean>(false);
 
   const circlesItem: { color: string; themeType: tThemesType }[] = [
     {
@@ -37,7 +41,6 @@ const HeaderLayout: FC<IHeaderLayoutProps> = () => {
   ];
 
   const handleClickChangeTheme = (themeType: tThemesType) => {
-    console.log(themeType);
     handleChangeThemeType(themeType);
   };
 
@@ -70,25 +73,69 @@ const HeaderLayout: FC<IHeaderLayoutProps> = () => {
           <Button>{activeLocaleWords.loginToApp}</Button>
         </div>
 
-        <div className={classes.circles}>
-          {circlesItem.map((item, key) => (
-            <div
-              className={`${classes.circlesItem} ${
-                item.themeType === activeThemeType
-                  ? classes.circlesItemActive
-                  : ''
-              }`}
-              style={{
-                background: item.color,
-              }}
-              onClick={() => {
-                handleClickChangeTheme(item.themeType);
-              }}
-              key={key}
-            />
-          ))}
+        <div style={{ display: 'flex' }}>
+          <div className={classes.circles}>
+            {circlesItem.map((item, key) => (
+              <div
+                className={`${classes.circlesItem} ${
+                  item.themeType === activeThemeType
+                    ? classes.circlesItemActive
+                    : ''
+                }`}
+                style={{
+                  background: item.color,
+                }}
+                onClick={() => {
+                  handleClickChangeTheme(item.themeType);
+                }}
+                key={key}
+              />
+            ))}
+          </div>
+
+          <div
+            className={classes.menuIcon}
+            onClick={() => {
+              setIsActiveMenu((prevState) => !prevState);
+            }}>
+            <HiMenuAlt1 size={25} color={activeTheme.white} />
+          </div>
         </div>
       </ContainerLayout>
+
+      {isActiveMenu && (
+        <div
+          className={`${classes.menu}`}
+          style={{ background: activeTheme.header }}>
+          <ContainerLayout>
+            <Typography color={ETheme.TEXT} variant="text-4">
+              {activeLocaleWords.registerToApp}
+            </Typography>
+
+            <Typography color={ETheme.TEXT} variant="text-4">
+              {activeLocaleWords.loginToApp}
+            </Typography>
+
+            <Typography color={ETheme.TEXT} variant="text-4">
+              <AiFillAndroid
+                color="#ffffff"
+                size={25}
+                style={{ marginRight: 9 }}
+              />
+              {activeLocaleWords.android}
+            </Typography>
+
+            <Typography color={ETheme.TEXT} variant="text-4">
+              <AiFillApple
+                color="#ffffff"
+                size={25}
+                style={{ marginRight: 9 }}
+              />
+              {activeLocaleWords.ios}
+            </Typography>
+          </ContainerLayout>
+        </div>
+      )}
     </header>
   );
 };

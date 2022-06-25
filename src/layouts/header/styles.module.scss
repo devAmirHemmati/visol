@@ -6,12 +6,46 @@
   position: sticky;
   top: 0;
   left: 0;
+  position: relative;
 
   .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 100%;
+  }
+
+  .menuIcon {
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 3px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    display: none;
+
+    @include media('max', 'lg') {
+      margin-left: 15px;
+      display: block;
+    }
+  }
+
+  .menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    padding: 10px 0;
+    padding-bottom: 20px;
+    transition: 0.4s;
+    overflow: hidden;
+
+    @include media('min', 'xl') {
+      display: none;
+    }
   }
 
   .buttons {

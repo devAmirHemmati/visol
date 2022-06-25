@@ -88,7 +88,12 @@ const GreatServiceLandingPageUi = () => {
                 <div
                   className={`${classes.menuItemIcon} ${
                     isActive ? classes.menuItemIconActive : ''
-                  }`}>
+                  }`}
+                  style={{
+                    backgroundColor: isActive
+                      ? activeTheme.activeIcon
+                      : 'transparent',
+                  }}>
                   <Icon
                     color={
                       isActive
@@ -102,7 +107,9 @@ const GreatServiceLandingPageUi = () => {
                 <Typography
                   variant="text-3"
                   color={ETheme.TEXT}
-                  className={isActive ? classes.menuItemTitleActive : ''}
+                  className={`${classes.menuItemTitle} ${
+                    isActive ? classes.menuItemTitleActive : ''
+                  }`}
                   textAlgin="center"
                   noneSelection>
                   {title}
@@ -123,44 +130,26 @@ const GreatServiceLandingPageUi = () => {
           })}
         </ul>
         <div className={classes.main}>
-          {items.map((item, index) => {
-            const top: string =
-              index > activeMenuIndex
-                ? '150%'
-                : index < activeMenuIndex
-                ? '-150%'
-                : '0';
+          <div>
+            <div className={classes.image}>
+              <Image
+                src={`/images/${activeItem.imageName}`}
+                alt={activeItem.title}
+                draggable="false"
+                layout="fill"
+              />
+            </div>
 
-            return (
-              <div
-                key={index}
-                style={{
-                  top,
-                }}>
-                <div className={classes.image}>
-                  <Image
-                    src={`/images/${item.imageName}`}
-                    alt={activeItem.title}
-                    draggable="false"
-                    layout="fill"
-                  />
-                </div>
+            <div className={classes.content}>
+              <Typography color={ETheme.TEXT} variant="title-3" component="h3">
+                {activeItem.title}
+              </Typography>
 
-                <div className={classes.content}>
-                  <Typography
-                    color={ETheme.TEXT}
-                    variant="title-3"
-                    component="h3">
-                    {item.title}
-                  </Typography>
-
-                  <Typography color={ETheme.TEXT} variant="text-4">
-                    {item.description}
-                  </Typography>
-                </div>
-              </div>
-            );
-          })}
+              <Typography color={ETheme.TEXT} variant="text-4">
+                {activeItem.description}
+              </Typography>
+            </div>
+          </div>
         </div>
       </div>
     </ContainerLayout>

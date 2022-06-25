@@ -90,3 +90,7 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+.ReactCollapse--collapse {
+  transition: height 400ms;
+}
