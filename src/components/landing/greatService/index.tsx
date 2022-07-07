@@ -12,7 +12,6 @@ const GreatServiceLandingPageUi = () => {
   const { activeLocaleWords } = useI18Context();
   const { activeTheme } = useThemeContext();
   const [activeMenuIndex, setActiveMenuIndex] = useState<number>(0);
-  const [beforeActiveMenuIndex, setBeforeActiveMenuIndex] = useState<number>(0);
 
   const icons = [
     MdSupportAgent,

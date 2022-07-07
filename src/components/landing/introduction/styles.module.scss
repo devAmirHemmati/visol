@@ -1,6 +1,10 @@
 .wrapper {
   position: relative;
 
+  .header {
+    height: var(--header-height);
+  }
+
   .slider {
     width: 100%;
     height: calc(100vh - var(--header-height));

@@ -28,6 +28,8 @@ const IntroductionLandingPageUi: FC = () => {
 
   return (
     <div className={classes.wrapper}>
+      <div className={classes.header} />
+
       <Slider className={classes.slider} isShowArrows isShowArrowsBorder>
         {activeLocaleWords.landingIntroductionSliderItems.map((item, index) => (
           <Image src={item} alt={item} key={index} layout="fill" />

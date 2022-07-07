@@ -3,10 +3,10 @@
 .wrapper {
   height: var(--header-height);
   width: 100%;
-  position: sticky;
   top: 0;
   left: 0;
-  position: relative;
+  position: fixed;
+  z-index: 20;
 
   .container {
     display: flex;

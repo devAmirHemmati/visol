@@ -2,7 +2,7 @@
 
 .wrapper {
   padding-top: 50px;
-  padding-bottom: 120px;
+  padding-bottom: 50px;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -93,7 +93,7 @@
         border-radius: 30px;
         padding: 0 75px;
         position: relative;
-        min-height: 370px;
+        min-height: 500px;
         padding-top: 100px;
         padding-bottom: 20px;
 
@@ -118,7 +118,7 @@
         }
 
         .description {
-          max-height: 155px;
+          height: 285px;
           overflow-y: auto;
         }
 
