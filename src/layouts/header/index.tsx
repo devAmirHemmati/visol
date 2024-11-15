@@ -1,6 +1,8 @@
 import { FC, useState } from 'react';
 import { HiMenuAlt1 } from 'react-icons/hi';
 import { AiFillAndroid, AiFillApple } from 'react-icons/ai';
+import { FaSignInAlt } from 'react-icons/fa';
+import { RiUserAddLine } from 'react-icons/ri';
 import { Image, Button, Typography } from '../../components';
 import { useI18Context, useThemeContext } from '../../gsm';
 import { tThemesType } from '../../gsm/theme/types';
@@ -9,7 +11,6 @@ import ContainerLayout from '../container';
 import { IHeaderLayoutProps } from './types';
 import classes from './styles.module.scss';
 import { ETheme } from '../../themes/types.d';
-import { Collapse } from 'react-collapse';
 
 const HeaderLayout: FC<IHeaderLayoutProps> = () => {
   const { activeTheme, activeThemeType, handleChangeThemeType } =
@@ -108,15 +109,27 @@ const HeaderLayout: FC<IHeaderLayoutProps> = () => {
           className={`${classes.menu}`}
           style={{ background: activeTheme.header }}>
           <ContainerLayout>
-            <Typography color={ETheme.TEXT} variant="text-4">
+            <Typography color={ETheme.WHITE} variant="text-4">
+              <RiUserAddLine
+                color="#ffffff"
+                size={25}
+                style={{ marginRight: 9 }}
+              />
+
               {activeLocaleWords.registerToApp}
             </Typography>
 
-            <Typography color={ETheme.TEXT} variant="text-4">
+            <Typography color={ETheme.WHITE} variant="text-4">
+              <FaSignInAlt
+                color="#ffffff"
+                size={25}
+                style={{ marginRight: 9 }}
+              />
+
               {activeLocaleWords.loginToApp}
             </Typography>
 
-            <Typography color={ETheme.TEXT} variant="text-4">
+            <Typography color={ETheme.WHITE} variant="text-4">
               <AiFillAndroid
                 color="#ffffff"
                 size={25}
@@ -125,7 +138,7 @@ const HeaderLayout: FC<IHeaderLayoutProps> = () => {
               {activeLocaleWords.android}
             </Typography>
 
-            <Typography color={ETheme.TEXT} variant="text-4">
+            <Typography color={ETheme.WHITE} variant="text-4">
               <AiFillApple
                 color="#ffffff"
                 size={25}

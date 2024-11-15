@@ -26,7 +26,7 @@ const FooterLayout = () => {
                       component="a"
                       href={item.to}
                       variant="text-9"
-                      textAlgin="center"
+                      textAlgin="left"
                       target={item.isBlank ? '_blank' : '_self'}
                       color={ETheme.FOOTER}>
                       {item.title}
@@ -39,7 +39,7 @@ const FooterLayout = () => {
                     <Typography
                       component="a"
                       variant="text-9"
-                      textAlgin="center"
+                      textAlgin="left"
                       target={item.isBlank ? '_blank' : '_self'}
                       color={ETheme.FOOTER}>
                       {item.title}
